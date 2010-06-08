@@ -1,18 +1,25 @@
-core = 6.17
-projects[admin_menu] = 1.5
-projects[webform] = 2.9
-projects[external] = 1.9
-projects[cck] = 2.6
-projects[imagefield] = 3.3
-projects[filefield] = 3.3
-projects[views] = 2.10
-projects[imageapi] = 1.8
-projects[imagecache] = 2.0-beta10
-projects[imce] = 2.0-beta3
-projects[token] = 1.13
-projects[pathauto] = 1.3
-projects[page_title] = 2.3
-projects[globalredirect] = 1.2
-projects[nodewords] = 1.12-beta9
-projects[ckeditor] = 1.1
-projects[bz_lite] = 1.0
+core = 6.x
+
+; MODULES
+projects[] = drupal
+projects[] = admin_menu
+projects[] = cck
+projects[] = ckeditor
+projects[] = external
+projects[] = filefield
+projects[] = globalredirect
+projects[] = imageapi
+projects[] = imagecache
+projects[] = imagefield
+projects[] = imce
+projects[] = nodewords
+projects[] = page_title
+projects[] = pathauto
+projects[] = token
+projects[] = views
+projects[] = webform
+
+; THEMES
+projects[] = bz_lite
+projects[] = starkish
+
