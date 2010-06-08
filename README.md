@@ -18,4 +18,9 @@ Installed modules include:
 - views
 - webform
 
+Installed themes include:
+
+- bz_lite
+- starkish
+
 A few smart default settings are also put into place.
