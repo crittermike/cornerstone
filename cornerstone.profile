@@ -12,7 +12,7 @@ function cornerstone_profile_modules() {
     'menu', 'path', 'update',
 
     // Miscellaneous contrib modules
-    'admin_menu', 'webform', 'external', 'ckeditor', 'imce',
+    'admin_menu', 'webform', 'external', 'ckeditor', 'imce', 'vertical_tabs',
 
     // CCK submodules
     'content', 'filefield', 'fieldgroup', 'nodereference', 'number', 'optionwidgets', 'text', 'imagefield',
@@ -140,17 +140,19 @@ function cornerstone_profile_tasks(&$task, $url) {
   // Don't display date and author information for page nodes by default.
   $theme_settings = variable_get('theme_settings', array());
   $theme_settings['toggle_node_info_page'] = FALSE;
+  $theme_settings['toggle_node_info_webform'] = FALSE;
   variable_set('theme_settings', $theme_settings);
   
   // Set the admin theme.
   variable_set('admin_theme','bz_merge');
-
-  // Prevent pathauto from overwriting aliases for already aliased nodes.
-  variable_set('pathauto_update_action', 2);
+  variable_set('node_admin_theme', TRUE);
 
   // Hide "Powered by Drupal".
   db_query("DELETE FROM {blocks} WHERE module = '%s' AND region = '%s'", 'system', 'footer');
-
+  
+  // Change "Webform" to "Form"
+  db_query("UPDATE {node_type} SET name = '%s' WHERE type = '%s', 'Form', 'webform'");
+ 
   // Update the menu router information.
   menu_rebuild();
 }
