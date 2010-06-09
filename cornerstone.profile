@@ -143,7 +143,7 @@ function cornerstone_profile_tasks(&$task, $url) {
   variable_set('theme_settings', $theme_settings);
   
   // Set the admin theme.
-  variable_set('admin_theme','bz_merge')
+  variable_set('admin_theme','bz_merge');
 
   // Prevent pathauto from overwriting aliases for already aliased nodes.
   variable_set('pathauto_update_action', 2);
