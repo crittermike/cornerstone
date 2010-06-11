@@ -3,6 +3,7 @@ core = 6.x
 ; MODULES
 projects[] = drupal
 projects[] = admin_menu
+projects[] = blocks_404
 projects[] = cck
 projects[] = ckeditor
 projects[] = external
@@ -12,6 +13,7 @@ projects[] = imageapi
 projects[] = imagecache
 projects[] = imagefield
 projects[] = imce
+projects[] = imce_kama
 projects[] = nodewords
 projects[] = page_title
 projects[] = pathauto

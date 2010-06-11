@@ -12,7 +12,7 @@ function cornerstone_profile_modules() {
     'menu', 'path', 'update',
 
     // Miscellaneous contrib modules
-    'admin_menu', 'webform', 'external', 'ckeditor', 'imce', 'vertical_tabs',
+    'admin_menu', 'webform', 'external', 'ckeditor', 'imce', 'imce_kama', 'vertical_tabs', 'blocks_404',
 
     // CCK submodules
     'content', 'filefield', 'fieldgroup', 'nodereference', 'number', 'optionwidgets', 'text', 'imagefield',
