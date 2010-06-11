@@ -151,7 +151,7 @@ function cornerstone_profile_tasks(&$task, $url) {
   db_query("DELETE FROM {blocks} WHERE module = '%s' AND region = '%s'", 'system', 'footer');
   
   // Change "Webform" to "Form"
-  db_query("UPDATE {node_type} SET name = '%s' WHERE type = '%s', 'Form', 'webform'");
+  db_query("UPDATE {node_type} SET name = '%s' WHERE type = '%s'", 'Form', 'webform');
  
   // Update the menu router information.
   menu_rebuild();
