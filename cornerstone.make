@@ -3,7 +3,7 @@ core = 6.x
 ; MODULES
 projects[] = drupal
 projects[] = admin_menu
-projects[] = blocks_404
+projects[] = blocks404
 projects[] = cck
 projects[] = ckeditor
 projects[] = external
