@@ -27,7 +27,7 @@ function cornerstone_profile_modules() {
     'token', 'pathauto',
 
     // SEO & Analytics
-    'page_title', 'globalredirect', 'nodewords'
+    'page_title', 'globalredirect', 'nodewords', 'nodewords_basic'
   );
 }
 
