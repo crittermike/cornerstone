@@ -17,6 +17,7 @@ projects[] = imce_kama
 projects[] = nodewords
 projects[] = page_title
 projects[] = pathauto
+projects[] = poormanscron
 projects[] = token
 projects[] = vertical_tabs
 projects[] = views
