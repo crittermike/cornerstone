@@ -147,6 +147,9 @@ function cornerstone_profile_tasks(&$task, $url) {
   variable_set('admin_theme','bz_merge');
   variable_set('node_admin_theme', TRUE);
 
+  // Disable new user registration.
+  variable_set('user_register',0);
+
   // Hide "Powered by Drupal".
   db_query("DELETE FROM {blocks} WHERE module = '%s' AND region = '%s'", 'system', 'footer');
   
