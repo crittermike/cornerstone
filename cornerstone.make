@@ -20,6 +20,7 @@ projects[] = page_title
 projects[] = pathauto
 projects[] = poormanscron
 projects[] = token
+projects[] = unique_link_title
 projects[] = vertical_tabs
 projects[] = views
 projects[] = webform

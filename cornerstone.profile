@@ -12,7 +12,8 @@ function cornerstone_profile_modules() {
     'menu', 'path', 'update',
 
     // Miscellaneous contrib modules
-    'admin_menu', 'author_select', 'webform', 'external', 'ckeditor', 'imce', 'imce_kama', 'vertical_tabs', 'blocks404', 'poormanscron',
+    'admin_menu', 'author_select', 'webform', 'external', 'ckeditor', 'imce', 'imce_kama', 'vertical_tabs', 
+    'blocks404', 'poormanscron', unique_link_title',
 
     // CCK submodules
     'content', 'filefield', 'fieldgroup', 'nodereference', 'number', 'optionwidgets', 'text', 'imagefield',
