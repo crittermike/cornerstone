@@ -12,8 +12,8 @@ function cornerstone_profile_modules() {
     'menu', 'path', 'update',
 
     // Miscellaneous contrib modules
-    'admin_menu', 'author_select', 'webform', 'external', 'ckeditor', 'imce', 'imce_kama', 'vertical_tabs', 
-    'blocks404', 'poormanscron', unique_link_title',
+    'admin_menu', 'author_select', 'webform', 'external', 'ckeditor', 'imce', 'imce_kama', 'vertical_tabs',
+    'blocks404', 'poormanscron', 'unique_link_title',
 
     // CCK submodules
     'content', 'filefield', 'fieldgroup', 'nodereference', 'number', 'optionwidgets', 'text', 'imagefield',
@@ -143,7 +143,7 @@ function cornerstone_profile_tasks(&$task, $url) {
   $theme_settings['toggle_node_info_page'] = FALSE;
   $theme_settings['toggle_node_info_webform'] = FALSE;
   variable_set('theme_settings', $theme_settings);
-  
+
   // Set the admin theme.
   variable_set('admin_theme','bz_merge');
   variable_set('node_admin_theme', TRUE);
@@ -153,10 +153,10 @@ function cornerstone_profile_tasks(&$task, $url) {
 
   // Hide "Powered by Drupal".
   db_query("DELETE FROM {blocks} WHERE module = '%s' AND region = '%s'", 'system', 'footer');
-  
+
   // Change "Webform" to "Form"
   db_query("UPDATE {node_type} SET name = '%s' WHERE type = '%s'", 'Form', 'webform');
- 
+
   // Update the menu router information.
   menu_rebuild();
 }
